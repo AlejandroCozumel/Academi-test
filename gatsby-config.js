@@ -1,13 +1,13 @@
-require("dotenv").config({
-  path: `.env.${process.env.NODE_ENV}`,
-});
+// require("dotenv").config({
+//   path: `.env.${process.env.NODE_ENV}`,
+// });
 
-const strapiConfig = {
-  apiURL: process.env.STRAPI_API_URL || "http://localhost:1337",
-  accessToken: process.env.STRAPI_TOKEN,
-  collectionTypes: ["category", "product", "variant"],
-  singleTypes: [],
-};
+// const strapiConfig = {
+//   apiURL: process.env.STRAPI_API_URL || "http://localhost:1337",
+//   accessToken: process.env.STRAPI_TOKEN,
+//   collectionTypes: ["category", "product", "variant"],
+//   singleTypes: [],
+// };
 
 module.exports = {
   siteMetadata: {
@@ -50,13 +50,13 @@ module.exports = {
       },
       __key: "pages",
     },
-    {
-      resolve: `gatsby-source-strapi`,
-      options: {
-        apiURL: process.env.STRAPI_API_URL || "http://localhost:1337",
-        accessToken: process.env.STRAPI_TOKEN,
-        collectionTypes: ["category", "product", "variant"],
-      },
-    },
+    // {
+    //   resolve: `gatsby-source-strapi`,
+    //   options: {
+    //     apiURL: process.env.STRAPI_API_URL || "http://localhost:1337",
+    //     accessToken: process.env.STRAPI_TOKEN,
+    //     collectionTypes: ["category", "product", "variant"],
+    //   },
+    // },
   ],
 };
