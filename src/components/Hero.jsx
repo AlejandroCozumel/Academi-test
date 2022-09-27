@@ -1,4 +1,5 @@
 import React from "react";
+import dalia from "../images/Dalia.png";
 
 const Hero = () => {
   return (
@@ -8,6 +9,7 @@ const Hero = () => {
         <bh-photon-ring></bh-photon-ring>
         <bh-accretion></bh-accretion>
         <bh-backdrop></bh-backdrop>
+        <img src={dalia} alt="dalia" />
         {/* <bh-shadow></bh-shadow> */}
       </bh-container>
       {/* <audio src="https://deepspace.vercel.app/audio.mp3" loop></audio>

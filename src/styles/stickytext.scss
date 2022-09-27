@@ -1,7 +1,7 @@
 stick-list {
   display: flex;
   width: 100%;
-  max-width: 60vw;
+  max-width: 80vw;
   margin: 0 auto;
   color: white;
   flex-direction: column;
@@ -17,12 +17,21 @@ stick-item {
 
 stick-letter {
   font-weight: bold;
-  font-size: var(--base);
+  font-size: var(--base-text);
   top: var(--base);
   position: sticky;
   height: min-content;
   margin-right: var(--base);
   max-width: 2ch;
+  font-family: "Montserrat", sans-serif;
+  background: var(--black-gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(0, 0, 0, 0);
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+  background-attachment: fixed;
 }
 
 stick-content {
@@ -32,16 +41,18 @@ stick-content {
 
 stick-title {
   font-weight: bold;
-  font-size: var(--base);
+  font-size: var(--base-text);
+  font-family: "Raleway", sans-serif;
 }
 
 stick-text {
   font-size: 2vw;
+  font-family: "Raleway", sans-serif;
 }
 
 stick-title,
 stick-text {
-  background: var(--gradient-alternate);
+  background: var(--dalia-gradient);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: rgba(0, 0, 0, 0);
@@ -49,4 +60,51 @@ stick-text {
   background-position: center;
   background-repeat: repeat;
   background-attachment: fixed;
+}
+
+.company-grid-container {
+  margin-top: 150px;
+  font-family: "Montserrat", sans-serif;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 50px 100px;
+  .flex-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 20px;
+
+  }
+}
+.icon-container {
+  width: 100%;
+}
+.grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+  background: var(--black-gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(0, 0, 0, 0);
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+  background-attachment: fixed;
+  h5 {
+    text-align: center;
+    margin: 0;
+    font-size: 2.1rem;
+    letter-spacing: 5px;
+    font-weight: 300;
+    // color: black;
+  }
+  p {
+    text-align: center;
+    margin-top: 10px;
+    // color: gray;
+    font-size: 1.4rem;
+  }
 }

@@ -1,6 +1,7 @@
 @import "./breakpoints.scss";
 @import "./variables.scss";
 @import "./hero.scss";
+@import "./hero2.scss";
 @import "./collapsableimage.scss";
 @import "./bgimages.scss";
 @import "./imagetext.scss";
@@ -8,7 +9,7 @@
 @import "./stickytext.scss";
 
 body {
-	background-color: black;
+	background-color: white;
 	margin: 0;
 	font-family: sans-serif;
 	letter-spacing: -0.1ch;
